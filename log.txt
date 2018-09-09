@@ -1,0 +1,189 @@
+Log Type: directory.info
+
+Log Upload Time: Sun Sep 09 14:29:09 +0530 2018
+
+Log Length: 16285
+
+Showing 4096 bytes of 16285 total. Click here for the full log.
+
+0      8 -r-xr-xr-x   1 yarn     hadoop       4436 May 31  2017 ./mr-framework/hadoop/etc/hadoop/capacity-scheduler.xml
+  1050801      8 -r-xr-xr-x   1 yarn     hadoop       4567 May 31  2017 ./mr-framework/hadoop/etc/hadoop/yarn-env.sh
+  1050816      4 -r-xr-xr-x   1 yarn     hadoop       3518 May 31  2017 ./mr-framework/hadoop/etc/hadoop/kms-acls.xml
+  1049782      4 drwxr-xr-x   2 yarn     hadoop       4096 May 31  2017 ./mr-framework/hadoop/libexec
+  1049790      8 -r-xr-xr-x   1 yarn     hadoop       6016 May 31  2017 ./mr-framework/hadoop/libexec/httpfs-config.sh
+  1049783      4 -r-xr-xr-x   1 yarn     hadoop       2131 May 31  2017 ./mr-framework/hadoop/libexec/yarn-config.cmd
+  1049791      4 -r-xr-xr-x   1 yarn     hadoop       1777 May 31  2017 ./mr-framework/hadoop/libexec/mapred-config.cmd
+  1049787      4 -r-xr-xr-x   1 yarn     hadoop       1508 May 31  2017 ./mr-framework/hadoop/libexec/hdfs-config.sh
+  1049785      4 -r-xr-xr-x   1 yarn     hadoop       2304 May 31  2017 ./mr-framework/hadoop/libexec/mapred-config.sh
+  1049786      8 -r-xr-xr-x   1 yarn     hadoop       5431 May 31  2017 ./mr-framework/hadoop/libexec/kms-config.sh
+  1049789     12 -r-xr-xr-x   1 yarn     hadoop       8270 May 31  2017 ./mr-framework/hadoop/libexec/hadoop-config.cmd
+  1049784     12 -r-xr-xr-x   1 yarn     hadoop      11678 May 31  2017 ./mr-framework/hadoop/libexec/hadoop-config.sh
+  1049788      4 -r-xr-xr-x   1 yarn     hadoop       2215 May 31  2017 ./mr-framework/hadoop/libexec/yarn-config.sh
+  1049792      4 -r-xr-xr-x   1 yarn     hadoop       1640 May 31  2017 ./mr-framework/hadoop/libexec/hdfs-config.cmd
+  1050795     88 -r-xr-xr-x   1 yarn     hadoop      86424 May 31  2017 ./mr-framework/hadoop/LICENSE.txt
+  1050789      4 drwxr-xr-x   2 yarn     hadoop       4096 May 31  2017 ./mr-framework/hadoop/include
+  1050791      4 -r-xr-xr-x   1 yarn     hadoop       2441 May 31  2017 ./mr-framework/hadoop/include/StringUtils.hh
+  1050790     36 -r-xr-xr-x   1 yarn     hadoop      33361 May 31  2017 ./mr-framework/hadoop/include/hdfs.h
+  1050794      4 -r-xr-xr-x   1 yarn     hadoop       3319 May 31  2017 ./mr-framework/hadoop/include/TemplateFactory.hh
+  1050792      8 -r-xr-xr-x   1 yarn     hadoop       4514 May 31  2017 ./mr-framework/hadoop/include/SerialUtils.hh
+  1050793      8 -r-xr-xr-x   1 yarn     hadoop       6330 May 31  2017 ./mr-framework/hadoop/include/Pipes.hh
+  1050827     16 -r-xr-xr-x   1 yarn     hadoop      15753 May 31  2017 ./mr-framework/hadoop/NOTICE.txt
+  1704459      4 -rwx------   1 yarn     hadoop        758 Sep  9 08:56 ./default_container_executor.sh
+  1704455      8 -rwx------   1 yarn     hadoop       6604 Sep  9 08:56 ./launch_container.sh
+  1704458      4 -rw-r--r--   1 yarn     hadoop         16 Sep  9 08:56 ./.default_container_executor_session.sh.crc
+  1704453      4 -rw-r--r--   1 yarn     hadoop        106 Sep  9 08:56 ./container_tokens
+  1704452      4 drwx--x---   2 yarn     hadoop       4096 Sep  9 08:56 ./tmp
+  1704428      4 -r-x------   1 yarn     hadoop       3248 Sep  9 08:56 ./mapper.py
+  1704457      4 -rwx------   1 yarn     hadoop        704 Sep  9 08:56 ./default_container_executor_session.sh
+  1704431      4 -r-x------   1 yarn     hadoop        906 Sep  9 08:56 ./reducer.py
+  1704462      4 drwxr-xr-x   2 yarn     hadoop       4096 Sep  9 08:56 ./jobSubmitDir
+  1704441      4 -r-x------   1 yarn     hadoop        554 Sep  9 08:56 ./jobSubmitDir/job.split
+  1704434      4 -r-x------   1 yarn     hadoop        116 Sep  9 08:56 ./jobSubmitDir/job.splitmetainfo
+  1704439      4 drwx------   2 yarn     hadoop       4096 Sep  9 08:56 ./job.jar
+  1704437    108 -r-x------   1 yarn     hadoop     107912 Sep  9 08:56 ./job.jar/job.jar
+  1704456      4 -rw-r--r--   1 yarn     hadoop         60 Sep  9 08:56 ./.launch_container.sh.crc
+  1704444    124 -r-x------   1 yarn     hadoop     124481 Sep  9 08:56 ./job.xml
+  1704460      4 -rw-r--r--   1 yarn     hadoop         16 Sep  9 08:56 ./.default_container_executor.sh.crc
+broken symlinks(find -L . -maxdepth 5 -type l -ls):
+
+Log Type: launch_container.sh
+
+Log Upload Time: Sun Sep 09 14:29:09 +0530 2018
+
+Log Length: 6604
+
+Showing 4096 bytes of 6604 total. Click here for the full log.
+
+port HADOOP_HOME="/usr/hdp/2.6.1.0-129/hadoop"
+export HOME="/home/"
+export NM_AUX_SERVICE_spark2_shuffle=""
+export CONTAINER_ID="container_e16_1524406905265_2591_01_000001"
+export MALLOC_ARENA_MAX="4"
+mkdir -p jobSubmitDir
+hadoop_shell_errorcode=$?
+if [ $hadoop_shell_errorcode -ne 0 ]
+then
+  exit $hadoop_shell_errorcode
+fi
+ln -sf "/scratch-node-local/yarn/local/usercache/dolaram/appcache/application_1524406905265_2591/filecache/10/job.splitmetainfo" "jobSubmitDir/job.splitmetainfo"
+hadoop_shell_errorcode=$?
+if [ $hadoop_shell_errorcode -ne 0 ]
+then
+  exit $hadoop_shell_errorcode
+fi
+mkdir -p jobSubmitDir
+hadoop_shell_errorcode=$?
+if [ $hadoop_shell_errorcode -ne 0 ]
+then
+  exit $hadoop_shell_errorcode
+fi
+ln -sf "/scratch-node-local/yarn/local/usercache/dolaram/appcache/application_1524406905265_2591/filecache/12/job.split" "jobSubmitDir/job.split"
+hadoop_shell_errorcode=$?
+if [ $hadoop_shell_errorcode -ne 0 ]
+then
+  exit $hadoop_shell_errorcode
+fi
+ln -sf "/scratch-node-local/yarn/local/filecache/11/mapreduce.tar.gz" "mr-framework"
+hadoop_shell_errorcode=$?
+if [ $hadoop_shell_errorcode -ne 0 ]
+then
+  exit $hadoop_shell_errorcode
+fi
+ln -sf "/scratch-node-local/yarn/local/usercache/dolaram/appcache/application_1524406905265_2591/filecache/11/job.jar" "job.jar"
+hadoop_shell_errorcode=$?
+if [ $hadoop_shell_errorcode -ne 0 ]
+then
+  exit $hadoop_shell_errorcode
+fi
+ln -sf "/scratch-node-local/yarn/local/usercache/dolaram/filecache/16/mapper.py" "mapper.py"
+hadoop_shell_errorcode=$?
+if [ $hadoop_shell_errorcode -ne 0 ]
+then
+  exit $hadoop_shell_errorcode
+fi
+ln -sf "/scratch-node-local/yarn/local/usercache/dolaram/filecache/17/reducer.py" "reducer.py"
+hadoop_shell_errorcode=$?
+if [ $hadoop_shell_errorcode -ne 0 ]
+then
+  exit $hadoop_shell_errorcode
+fi
+ln -sf "/scratch-node-local/yarn/local/usercache/dolaram/appcache/application_1524406905265_2591/filecache/13/job.xml" "job.xml"
+hadoop_shell_errorcode=$?
+if [ $hadoop_shell_errorcode -ne 0 ]
+then
+  exit $hadoop_shell_errorcode
+fi
+# Creating copy of launch script
+cp "launch_container.sh" "/scratch-node-local/hdfs/yarn/log/application_1524406905265_2591/container_e16_1524406905265_2591_01_000001/launch_container.sh"
+chmod 640 "/scratch-node-local/hdfs/yarn/log/application_1524406905265_2591/container_e16_1524406905265_2591_01_000001/launch_container.sh"
+# Determining directory contents
+echo "ls -l:" 1>"/scratch-node-local/hdfs/yarn/log/application_1524406905265_2591/container_e16_1524406905265_2591_01_000001/directory.info"
+ls -l 1>>"/scratch-node-local/hdfs/yarn/log/application_1524406905265_2591/container_e16_1524406905265_2591_01_000001/directory.info"
+echo "find -L . -maxdepth 5 -ls:" 1>>"/scratch-node-local/hdfs/yarn/log/application_1524406905265_2591/container_e16_1524406905265_2591_01_000001/directory.info"
+find -L . -maxdepth 5 -ls 1>>"/scratch-node-local/hdfs/yarn/log/application_1524406905265_2591/container_e16_1524406905265_2591_01_000001/directory.info"
+echo "broken symlinks(find -L . -maxdepth 5 -type l -ls):" 1>>"/scratch-node-local/hdfs/yarn/log/application_1524406905265_2591/container_e16_1524406905265_2591_01_000001/directory.info"
+find -L . -maxdepth 5 -type l -ls 1>>"/scratch-node-local/hdfs/yarn/log/application_1524406905265_2591/container_e16_1524406905265_2591_01_000001/directory.info"
+exec /bin/bash -c "$JAVA_HOME/bin/java -Djava.io.tmpdir=$PWD/tmp -Dlog4j.configuration=container-log4j.properties -Dyarn.app.container.log.dir=/scratch-node-local/hdfs/yarn/log/application_1524406905265_2591/container_e16_1524406905265_2591_01_000001 -Dyarn.app.container.log.filesize=0 -Dhadoop.root.logger=INFO,CLA -Dhadoop.root.logfile=syslog -Dhdp.version=2.6.1.0-129 -Xmx4915m -Dhdp.version=2.6.1.0-129 org.apache.hadoop.mapreduce.v2.app.MRAppMaster 1>/scratch-node-local/hdfs/yarn/log/application_1524406905265_2591/container_e16_1524406905265_2591_01_000001/stdout 2>/scratch-node-local/hdfs/yarn/log/application_1524406905265_2591/container_e16_1524406905265_2591_01_000001/stderr "
+hadoop_shell_errorcode=$?
+if [ $hadoop_shell_errorcode -ne 0 ]
+then
+  exit $hadoop_shell_errorcode
+fi
+
+Log Type: stderr
+
+Log Upload Time: Sun Sep 09 14:29:09 +0530 2018
+
+Log Length: 1703
+
+Sep 09, 2018 8:56:11 AM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory register
+INFO: Registering org.apache.hadoop.mapreduce.v2.app.webapp.JAXBContextResolver as a provider class
+Sep 09, 2018 8:56:11 AM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory register
+INFO: Registering org.apache.hadoop.yarn.webapp.GenericExceptionHandler as a provider class
+Sep 09, 2018 8:56:11 AM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory register
+INFO: Registering org.apache.hadoop.mapreduce.v2.app.webapp.AMWebServices as a root resource class
+Sep 09, 2018 8:56:11 AM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.9 09/02/2011 11:17 AM'
+Sep 09, 2018 8:56:11 AM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory getComponentProvider
+INFO: Binding org.apache.hadoop.mapreduce.v2.app.webapp.JAXBContextResolver to GuiceManagedComponentProvider with the scope "Singleton"
+Sep 09, 2018 8:56:11 AM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory getComponentProvider
+INFO: Binding org.apache.hadoop.yarn.webapp.GenericExceptionHandler to GuiceManagedComponentProvider with the scope "Singleton"
+Sep 09, 2018 8:56:12 AM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory getComponentProvider
+INFO: Binding org.apache.hadoop.mapreduce.v2.app.webapp.AMWebServices to GuiceManagedComponentProvider with the scope "PerRequest"
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.ipc.Server).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+
+Log Type: stdout
+
+Log Upload Time: Sun Sep 09 14:29:09 +0530 2018
+
+Log Length: 0
+
+
+Log Type: syslog
+
+Log Upload Time: Sun Sep 09 14:29:09 +0530 2018
+
+Log Length: 81763
+
+Showing 4096 bytes of 81763 total. Click here for the full log.
+
+ler. Size of the outstanding queue size is 0
+2018-09-09 08:58:35,396 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Copying hdfs://turing.cds.iisc.ac.in:8020/user/dolaram/.staging/job_1524406905265_2591/job_1524406905265_2591_1.jhist to hdfs://turing.cds.iisc.ac.in:8020/mr-history/tmp/dolaram/job_1524406905265_2591-1536483392570-dolaram-streamjob5633822329007440006.jar-1536483515307-4-1-SUCCEEDED-default-1536483372220.jhist_tmp
+2018-09-09 08:58:35,457 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Copied to done location: hdfs://turing.cds.iisc.ac.in:8020/mr-history/tmp/dolaram/job_1524406905265_2591-1536483392570-dolaram-streamjob5633822329007440006.jar-1536483515307-4-1-SUCCEEDED-default-1536483372220.jhist_tmp
+2018-09-09 08:58:35,466 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Copying hdfs://turing.cds.iisc.ac.in:8020/user/dolaram/.staging/job_1524406905265_2591/job_1524406905265_2591_1_conf.xml to hdfs://turing.cds.iisc.ac.in:8020/mr-history/tmp/dolaram/job_1524406905265_2591_conf.xml_tmp
+2018-09-09 08:58:35,515 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Copied to done location: hdfs://turing.cds.iisc.ac.in:8020/mr-history/tmp/dolaram/job_1524406905265_2591_conf.xml_tmp
+2018-09-09 08:58:35,740 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Moved tmp to done: hdfs://turing.cds.iisc.ac.in:8020/mr-history/tmp/dolaram/job_1524406905265_2591.summary_tmp to hdfs://turing.cds.iisc.ac.in:8020/mr-history/tmp/dolaram/job_1524406905265_2591.summary
+2018-09-09 08:58:35,748 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Moved tmp to done: hdfs://turing.cds.iisc.ac.in:8020/mr-history/tmp/dolaram/job_1524406905265_2591_conf.xml_tmp to hdfs://turing.cds.iisc.ac.in:8020/mr-history/tmp/dolaram/job_1524406905265_2591_conf.xml
+2018-09-09 08:58:35,756 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Moved tmp to done: hdfs://turing.cds.iisc.ac.in:8020/mr-history/tmp/dolaram/job_1524406905265_2591-1536483392570-dolaram-streamjob5633822329007440006.jar-1536483515307-4-1-SUCCEEDED-default-1536483372220.jhist_tmp to hdfs://turing.cds.iisc.ac.in:8020/mr-history/tmp/dolaram/job_1524406905265_2591-1536483392570-dolaram-streamjob5633822329007440006.jar-1536483515307-4-1-SUCCEEDED-default-1536483372220.jhist
+2018-09-09 08:58:35,758 INFO [Thread-90] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Stopped JobHistoryEventHandler. super.stop()
+2018-09-09 08:58:35,763 INFO [Thread-90] org.apache.hadoop.mapreduce.v2.app.rm.RMCommunicator: Setting job diagnostics to 
+2018-09-09 08:58:35,763 INFO [Thread-90] org.apache.hadoop.mapreduce.v2.app.rm.RMCommunicator: History url is http://turing.cds.iisc.ac.in:19888/jobhistory/job/job_1524406905265_2591
+2018-09-09 08:58:35,773 INFO [Thread-90] org.apache.hadoop.mapreduce.v2.app.rm.RMCommunicator: Waiting for application to be successfully unregistered.
+2018-09-09 08:58:36,776 INFO [Thread-90] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Final Stats: PendingReds:0 ScheduledMaps:0 ScheduledReds:0 AssignedMaps:0 AssignedReds:1 CompletedMaps:4 CompletedReds:0 ContAlloc:5 ContRel:0 HostLocal:3 RackLocal:1
+2018-09-09 08:58:36,778 INFO [Thread-90] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Deleting staging directory hdfs://turing.cds.iisc.ac.in:8020 /user/dolaram/.staging/job_1524406905265_2591
+2018-09-09 08:58:36,790 INFO [Thread-90] org.apache.hadoop.ipc.Server: Stopping server on 46553
+2018-09-09 08:58:36,793 INFO [IPC Server listener on 46553] org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 46553
+2018-09-09 08:58:36,794 INFO [TaskHeartbeatHandler PingChecker] org.apache.hadoop.mapreduce.v2.app.TaskHeartbeatHandler: TaskHeartbeatHandler thread interrupted
+2018-09-09 08:58:36,794 INFO [IPC Server Responder] org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
