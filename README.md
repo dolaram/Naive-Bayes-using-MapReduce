@@ -10,7 +10,7 @@ accuracy on train, devel and test dataset on Local Machine.
 The python script implements the Naive Bayes classifier and calculate computaion time and a
 accuracy on train, devel and test dataset on Local Machine.
 
-3. Mapreduce_Naive_Bayes.py 
+3. Python_mapreduce.py 
 The python script implements the Naive Bayes algorithm on the train, test and dev dataset and records the corresponding accuracies along with time taken to train the algorithm. The dictionary is prepared on hadoop mapreduce platform.
 
 4. mapper.py 
