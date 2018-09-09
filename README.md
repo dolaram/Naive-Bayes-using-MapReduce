@@ -2,20 +2,23 @@
 Implementation of Naive Bayes Classifier using MapReduce on  Hadoop
 Naive Bayes implementation was done using MapReduce and Local Machine implementation, the data set is DBPedia. The following are brief descriptions of the project files:
 
- Naive_Bayes_classifier.py
+1. Naive_Bayes_classifier.py
 The python script implements the Naive Bayes classifier and calculate computaion time and a
 accuracy on train, devel and test dataset on Local Machine.
 
- Mapreduce_Naive_Bayes.py 
+2. Mapreduce_Naive_Bayes.py 
 The python script implements the Naive Bayes algorithm on the train, test and dev dataset and records the corresponding accuracies along with time taken to train the algorithm. The dictionary is prepared on hadoop mapreduce platform.
 
- mapper.py 
+3. mapper.py 
 The mapper python script is used to mapping using hadoop streaimng for generating the (label, word, 1) stream output.
 
- reducer.py 
+4. reducer.py 
 The reducer python script is used to mapping using hadoop streaimng for generating the (label, word, count) stream output.
 
- log.txt
+5. dictionary.pickle 
+Pickle files for dictinary storage so that model dosent have to be trained every time.
+
+5. log.txt
 Log file containing hadoop log records.
 
 # Useful Material
